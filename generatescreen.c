@@ -23,6 +23,5 @@ int firstFrame(int length, int height) {
     }
 
     running = 1;
-    test = 0;
     return 0;
 }
