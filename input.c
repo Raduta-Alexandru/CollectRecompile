@@ -12,6 +12,20 @@ void input(){
                 case SDLK_ESCAPE:
                     running = 0;
                     break;
+                case SDLK_1:
+                    isInLevel = 1;
+                    break;
+                case SDLK_2:
+                    isInLevel = 0;
+                    break;
+                case SDLK_EQUALS:
+                    playerJump += 5;
+                    break;
+                case SDLK_MINUS:
+                    if (playerJump > 5) {
+                        playerJump -= 5;
+                    }
+                    break;
             }
         }
     }

@@ -4,7 +4,7 @@ void frameGeneration() {
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_RenderClear(renderer);
 
-    SDL_Rect rect = {playerPosX, playerPosY, 50, 50};
+    SDL_Rect rect = {playerPosX, playerPosY, playerLength, playerHeight};
     SDL_SetRenderDrawColor(renderer, 128, 128, 128, 255);
     SDL_RenderFillRect(renderer, &rect);
 

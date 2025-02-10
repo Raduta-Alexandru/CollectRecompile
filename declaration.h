@@ -1,10 +1,6 @@
 #ifndef declarations
 #define declarations
 // definitions for player action codes
-#define moveUp 1
-#define moveDown 2
-#define moveLeft 3
-#define moveRight 4
 
 // main library for game
 #include <SDL2/SDL.h>
@@ -13,6 +9,8 @@
 // knows if the game is running or it needs to be stopped
 extern SDL_Window *screen;
 extern SDL_Renderer *renderer;
+extern int screenLength;
+extern int screenHeight;
 extern char running;
 extern int maxFrameRate;
 extern char action; // used to see if there was an input
@@ -21,6 +19,12 @@ extern int playerPosX;
 extern int playerPosY;
 extern int playerMoveX;
 extern int playerMoveY;
+extern int playerHeight;
+extern int playerLength;
+extern char isInLevel;
+extern float playerVelocity;
+extern const float gravityConst;
+extern float playerJump;
 
 // action functions declaration
 
